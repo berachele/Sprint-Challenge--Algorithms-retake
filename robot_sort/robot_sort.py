@@ -1,6 +1,3 @@
-import time
-
-start_time = time.time()
 class SortingRobot:
     def __init__(self, l):
         """
@@ -135,7 +132,6 @@ class SortingRobot:
                 #break loop, the list is sorted
                 break
 
-end_time = time.time()
 
 if __name__ == "__main__":
     # Test our your implementation from the command line
@@ -147,4 +143,3 @@ if __name__ == "__main__":
 
     robot.sort()
     print(robot._list)
-    print(f'Runtime: {end_time - start_time} seconds')
