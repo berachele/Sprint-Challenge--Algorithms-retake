@@ -96,8 +96,25 @@ class SortingRobot:
         """
         Sort the robot's list.
         """
-        # Fill this out
-        pass
+        #first put the light to on
+        #while light is on, continually move right
+            #swap item--this will swap "None" with current position
+            #while can move right is true:
+                #move right
+                #if held item is greater than compared item
+                    #swap item
+                #else turn light off
+
+            #while light is off, we move over to the left until we reach none
+                #while compare item is not None
+                    #move left
+                #otherwise, if it is None
+                #swap item and turn light back on to continue process
+
+            #before turning light on, move right one position so start position is one to the right 
+            # lowest number should be in furthest left position)
+            #if compare item is None but can't move any more right (gone through the whole list)
+                #break loop, the list is sorted
 
 
 if __name__ == "__main__":
