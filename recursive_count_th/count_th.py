@@ -5,11 +5,20 @@ Your function must utilize recursion. It cannot contain any loops.
 '''
 def count_th(word):
     #counter starting at 0
+    count = 0
+    #base case
     #if length of word is 0
+    if len(word) == 0:
         #return 0
+        return 0
+    #recursive case
     #elif word[0] == 't'
+    elif word[0] == 't':
         #count += 1 and recurse again, word[1:]
-    #else
+        return count+1 + count_th(word[1:])
+    #otherwise move on
+    else:
         #just recurse again word[1:]
-        
+        return count_th(word[1:])
     #return count
+    return count
