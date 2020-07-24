@@ -13,12 +13,19 @@ def count_th(word):
         return 0
     #recursive case
     #elif word[0] == 't'
-    elif word[0] == 't':
-        #count += 1 and recurse again, word[1:]
-        return count+1 + count_th(word[1:])
+    elif word[0] == 't' and len(word) > 1:
+        #if next letter is 'h':
+        if word[1] == 'h':
+            #count += 1 and recurse again, word[1:]
+            return count+1 + count_th(word[1:])
+        else:
+            return count_th(word[1:])
     #otherwise move on
     else:
         #just recurse again word[1:]
         return count_th(word[1:])
     #return count
     return count
+
+word = "abcthefthghith"
+count_th(word)
